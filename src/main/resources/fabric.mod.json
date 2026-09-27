@@ -7,10 +7,10 @@
   "authors": [
     {
       "name": "Intensed",
-      "role": "Original Creator",
+      "role": "Maintainer",
       "contact": {
         "homepage": "https://modrinth.com/user/Intensed",
-        "email": "https://discord.gg/JNEYvDfQW"
+        "email": "https://intensed-dev.github.io/link/discord"
       }
     }
   ],
@@ -20,9 +20,9 @@
     "... and more!"
   ],
   "contact": {
-    "issues": "https://git.gay/Modcafe/fallback/issues",
-    "homepage": "https://modcafe.github.io/Fallback/getting-started",
-    "sources": "https://git.gay/Modcafe/fallback"
+    "issues": "https://github.com/Modcafe/Fallback/issues",
+    "homepage": "https://github.com/Modcafe/Fallback/wiki",
+    "sources": "https://github.com/Modcafe/Fallback/"
   },
   "license": "IGPL-1.0",
   "icon": "..icon.png",
@@ -49,11 +49,12 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.discord": "https://discord.gg/JNEYvDfQW",
-        "modmenu.github_releases": "https://git.gay/Modcafe/fallback/releases",
-        "modmenu.modrinth": "https://modrinth.com/project/Fallback",
+        "modmenu.discord": "https://intensed-dev.github.io/link/discord",
+        "discord": "https://intensed-dev.github.io/link/discord",
+        "modmenu.github_releases": "https://github.com/Modcafe/Fallback/releases",
+        "modmenu.modrinth": "https://modrinth.com/mod/Fallback",
         "Modcafe": "https://modrinth.com/organization/modcafe",
-        "Documentation": "https://modcafe.github.io/Fallback/getting-started"
+        "Documentation": "https://github.com/Modcafe/Fallback/wiki"
       }
     }
   }
