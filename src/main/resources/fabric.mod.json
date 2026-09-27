@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "fallback",
+  "version": "1.2.0",
+  "name": "Fallback",
+  "description": "Shared code for Modcafe's and Intensed's Mods and Data Packs.",
+  "authors": [
+    {
+      "name": "Intensed",
+      "role": "Original Creator",
+      "contact": {
+        "homepage": "https://modrinth.com/user/Intensed",
+        "email": "https://discord.gg/JNEYvDfQW"
+      }
+    }
+  ],
+  "contributors": [
+    "Intensed",
+    "ThatCuteOne",
+    "... and more!"
+  ],
+  "contact": {
+    "issues": "https://github.com/intensed-dev/Fallback/issues",
+    "homepage": "https://modcafe.github.io/Fallback/getting-started",
+    "sources": "https://github.com/intensed-dev/Fallback"
+  },
+  "license": "IGPL-1.0",
+  "icon": "assets/fallback/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "dev.intensed.fallback.client.FallbackDataGenerator"
+    ],
+    "client": [
+      "dev.intensed.fallback.client.FallbackClient"
+    ],
+    "main": [
+      "dev.intensed.fallback.Fallback"
+    ],
+    "modmenu": [
+      "dev.intensed.fallback.Fallback"
+    ]
+  },
+  "mixins": [
+    "fallback.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "fabric-api": "*",
+    "minecraft": "26.3"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/JNEYvDfQW",
+        "modmenu.github_releases": "https://github.com/intensed-dev/Fallback",
+        "modmenu.modrinth": "https://modrinth.com/project/Fallback",
+        "Modcafe": "https://modrinth.com/organization/modcafe",
+        "Documentation": "https://modcafe.github.io/Fallback/getting-started"
+      }
+    }
+  }
+}
