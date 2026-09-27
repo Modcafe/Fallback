@@ -18,6 +18,8 @@ Fallback is a Datapack Library with shared code for (Intensed's) Datapacks.
 
 Fallback delivers a lot of usefull features for Datapack developers, such as Configuration screens using a simple API or advanced Math. Fallback is still in early Work in Progress, and not all features are existing yet or working properly, but we'll expand this Library over time to make it more accessible to other people.
 
+<img alt="java" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/built-with/java_vector.svg"> <img alt="gradle" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/built-with/gradle_vector.svg"> <img alt="markdown" height="40" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/built-with/markdown_vector.svg">
+
 ## Features
 
 <details>
