@@ -41,7 +41,4 @@ public final class LogLevels {
         WARN,
         SUCCESS,
     }
-
-
-
 }
