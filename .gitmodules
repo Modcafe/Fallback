@@ -1,0 +1,3 @@
+[submodule "modcafe/branding"]
+	path = modcafe/branding
+	url = https://github.com/Modcafe/branding.git
