@@ -36,9 +36,6 @@
     ],
     "main": [
       "dev.intensed.fallback.Fallback"
-    ],
-    "modmenu": [
-      "dev.intensed.fallback.Fallback"
     ]
   },
   "mixins": [
