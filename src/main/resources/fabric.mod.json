@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "fallback",
-  "version": "1.2.0",
+  "version": "${version}",
   "name": "Fallback",
   "description": "Shared code for Modcafe's and Intensed's Mods and Data Packs.",
   "authors": [
@@ -20,9 +20,9 @@
     "... and more!"
   ],
   "contact": {
-    "issues": "https://github.com/intensed-dev/Fallback/issues",
+    "issues": "https://git.gay/Modcafe/fallback/issues",
     "homepage": "https://modcafe.github.io/Fallback/getting-started",
-    "sources": "https://github.com/intensed-dev/Fallback"
+    "sources": "https://git.gay/Modcafe/fallback"
   },
   "license": "IGPL-1.0",
   "icon": "assets/fallback/icon.png",
@@ -50,7 +50,7 @@
     "modmenu": {
       "links": {
         "modmenu.discord": "https://discord.gg/JNEYvDfQW",
-        "modmenu.github_releases": "https://github.com/intensed-dev/Fallback",
+        "modmenu.github_releases": "https://git.gay/Modcafe/fallback/releases",
         "modmenu.modrinth": "https://modrinth.com/project/Fallback",
         "Modcafe": "https://modrinth.com/organization/modcafe",
         "Documentation": "https://modcafe.github.io/Fallback/getting-started"
