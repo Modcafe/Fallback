@@ -49,8 +49,7 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.discord": "https://intensed-dev.github.io/link/discord",
-        "discord": "https://intensed-dev.github.io/link/discord",
+        "Discord": "https://intensed-dev.github.io/link/discord",
         "modmenu.github_releases": "https://github.com/Modcafe/Fallback/releases",
         "modmenu.modrinth": "https://modrinth.com/mod/Fallback",
         "Modcafe": "https://modrinth.com/organization/modcafe",
