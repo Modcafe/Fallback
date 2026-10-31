@@ -32,12 +32,12 @@ public final class RandomDialogAPI {
         ArrayList<Integer> available = new ArrayList<Integer>();
         for(int number=from;number<=to;++number){
             int score;
-            if(blocked.contains(number)){continue;}
+            if(blocked.contains(number))continue;
             scoreName=RandomDialogAPI.getScoreName(prefix,number);
             if(scoreName==null){continue;} // you can put smth else here if you want to handle null differently; this exists cuz i noticed your code would just have a heart attack and explode if scoreName was null so i added this to prevent that ^w^
             ScoreHolder holder=ScoreHolder.forNameOnly(scoreName); //also i expanded your giant unreadable line into multiple lines for better readabilnessility 
             score=scoreboard.getOrCreatePlayerScore(holder,objective).get();
-            if(score!=0){continue;}
+            if(score!=0)continue;
             available.add(number);
         }
         if (available.isEmpty()) {
