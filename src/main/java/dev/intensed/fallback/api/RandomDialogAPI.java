@@ -30,9 +30,14 @@ public final class RandomDialogAPI {
             objective = scoreboard.addObjective(OBJECTIVE_NAME, ObjectiveCriteria.DUMMY, Component.literal("Fallback Dialogs"), ObjectiveCriteria.RenderType.INTEGER, false, null);
         }
         ArrayList<Integer> available = new ArrayList<Integer>();
-        for (int number = from; number <= to; ++number) {
+        for(int number=from;number<=to;++number){
             int score;
-            if (blocked.contains(number) || (score = scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly((scoreName = RandomDialogAPI.getScoreName(prefix, number))), objective).get()) != 0) continue;
+            if(blocked.contains(number)){continue;}
+            scoreName=RandomDialogAPI.getScoreName(prefix,number);
+            if(scoreName==null){continue;} // you can put smth else here if you want to handle null differently; this exists cuz i noticed your code would just have a heart attack and explode if scoreName was null so i added this to prevent that ^w^
+            ScoreHolder holder=ScoreHolder.forNameOnly(scoreName); //also i expanded your giant unreadable line into multiple lines for better readabilnessility 
+            score=scoreboard.getOrCreatePlayerScore(holder,objective).get();
+            if(score!=0){continue;}
             available.add(number);
         }
         if (available.isEmpty()) {
