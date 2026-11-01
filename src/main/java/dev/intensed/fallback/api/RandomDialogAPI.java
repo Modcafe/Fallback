@@ -41,34 +41,26 @@ public final class RandomDialogAPI {
             available.add(number);
         }
         if (available.isEmpty()) {
-            source.sendFailure(Component.literal(("No unused dialogs are available for " + prefix + ".")));
+            source.sendFailure(Component.literal(("No unused dialogs are available for "+prefix+".")));
             return 0;
         }
-        int selected = available.get(ThreadLocalRandom.current().nextInt(available.size()));
-        scoreName = RandomDialogAPI.getScoreName(prefix, selected);
+        int selected=available.get(ThreadLocalRandom.current().nextInt(available.size()));
+        scoreName=RandomDialogAPI.getScoreName(prefix, selected);
+        if(scoreName==null)return 0; // you can put smth else here if you want to handle null differently; this exists cuz i noticed your code would just have a heart attack and explode if scoreName was null so i added this to prevent that ^w^
         scoreboard.getOrCreatePlayerScore(ScoreHolder.forNameOnly(scoreName), objective).set(1);
-        String command = "dialog show " + player + " " + prefix + ":" + selected;
+        String command="dialog show "+player+" "+prefix+":"+selected;
         server.getCommands().performPrefixedCommand(source, command);
         return 1;
     }
-
-    private static String getScoreName(String prefix, int number) {
-        return prefix + ":" + number;
+    private static String getScoreName(String prefix,int number){
+        return prefix+":"+number;
     }
-
     public static List<Integer> parseBlocked(String input) {
-        String[] values;
-        ArrayList<Integer> blocked = new ArrayList<Integer>();
-        if (input == null || input.isBlank()) {
-            return blocked;
-        }
-        for (String value : values = input.split(",")) {
-            try {
-                blocked.add(Integer.parseInt(value.trim()));
-            }
-            catch (NumberFormatException numberFormatException) {
-                // empty catch block
-            }
+        ArrayList<Integer> blocked=new ArrayList<>();
+        if(input==null||input.isBlank())return blocked;
+        for(String value:input.split(",")){
+            try{blocked.add(Integer.parseInt(value.trim()));}
+            catch(NumberFormatException ignored){/*empty catch block*/}
         }
         return blocked;
     }
